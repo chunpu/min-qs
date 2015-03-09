@@ -8,7 +8,7 @@
 	"test-travis": "npm run poor && npm test",
 	"poor": "browserify *test*.js | poor -b ie:6..8,chrome -R dot",
 	"pregit": "npm run browser && npm run readme",
-    "readme": "pretty-readme > readme.md"
+    "readme": "pretty-readme coveralls > readme.md"
   },
   "author": "chunpu",
   "license": "ISC",
