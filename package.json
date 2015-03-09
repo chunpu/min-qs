@@ -1,6 +1,6 @@
 {
   "name": "min-qs",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Mini Querystring Parse and Stringify Library",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/chunpu/min-qs.git"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "istanbul": "^0.3.6",
+    "mocha": "^2.1.0",
+    "poor": "latest"
   },
   "keywords": [
     "querystring",
