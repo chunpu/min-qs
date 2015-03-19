@@ -1,12 +1,13 @@
 {
   "name": "min-qs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mini Querystring Parse and Stringify Library",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test",
 	"test-travis": "npm run poor && npm test",
-	"poor": "browserify *test*.js | poor -b ie:6..8,chrome -R dot",
+	"poor": "browserify *test*.js | poor -b ie:6..8,chrome -R dot --url http://www.baidu.com",
+	"browser": "browserify index.js -s querystring > browser/browser.js",
 	"pregit": "npm run browser && npm run readme",
     "readme": "pretty-readme coveralls > readme.md"
   },
