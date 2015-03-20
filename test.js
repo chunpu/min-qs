@@ -3,7 +3,6 @@ var qs = require('./')
 
 
 describe('parse', function() {
-console.log(location.href)
 	it('should return object', function() {
 		var ret = qs.parse('a=1&b=foo')
 		assert.deepEqual(ret, {
