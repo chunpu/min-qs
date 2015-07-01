@@ -34,7 +34,7 @@ exports.stringify = function(obj, sep, eq) {
 	for (var k in obj) {
 		if (Object.hasOwnProperty.call(obj, k)) {
 			var v = obj[k]
-			if (v || '' == v || 0 == v) {
+			if (v || '' === v || 0 === v) {
 				ret.push(encode(k) + eq + encode(v))
 			}
 		}
