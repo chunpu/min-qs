@@ -1,14 +1,14 @@
 {
   "name": "min-qs",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Mini Querystring Parse and Stringify Library",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test",
-	"test-travis": "npm run poor && npm test",
-	"poor": "browserify *test*.js | poor -b ie:6..8,chrome -R dot --url http://www.baidu.com",
-	"browser": "browserify index.js -s querystring > browser/browser.js",
-	"pregit": "npm run browser && npm run readme",
+    "test-travis": "npm run poor && npm test",
+    "poor": "browserify *test*.js | poor -b ie:6..8,chrome -R dot --url http://www.baidu.com",
+    "browser": "browserify index.js -s querystring > browser/browser.js",
+    "pregit": "npm run browser && npm run readme",
     "readme": "pretty-readme coveralls > readme.md"
   },
   "author": "chunpu",
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/chunpu/min-qs/issues"
   },
-  "homepage": "https://github.com/chunpu/min-qs"
+  "homepage": "https://github.com/chunpu/min-qs",
+  "dependencies": {
+    "min-util": "^1.10.1"
+  }
 }
