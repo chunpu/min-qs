@@ -1,6 +1,6 @@
 {
   "name": "min-qs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Mini Querystring Parse and Stringify Library",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/chunpu/min-qs",
   "dependencies": {
-    "min-util": "^1.10.1"
+    "min-util": "latest"
   }
 }
