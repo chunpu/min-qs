@@ -75,7 +75,7 @@ function getOpt(sep, eq, opt) {
 	// sep, opt
 	// sep, eq, opt
 	opt = _.find(arguments, function(val) {
-		return is.obj(val)
+		return is.object(val)
 	})
 	sep = is.nos(sep) ? sep : undefined
 	eq = is.nos(eq) ? eq : undefined
