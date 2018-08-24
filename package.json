@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/chunpu/min-qs",
   "dependencies": {
-    "min-util": "latest"
+    "min-util": "github:chunpu/min-util"
   }
 }
